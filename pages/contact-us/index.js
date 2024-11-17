@@ -65,14 +65,17 @@ const ContactUsPage = () => {
                     alt=""
                   />
                 </span>
-                <h5 className="text-xl mb-2 font-bold">Qua Mạng Xã Hội</h5>
+                <h5 className="text-xl mb-2 font-bold">Mạng Xã Hội</h5>
                 <p className="mb-0 text-base opacity-90 leading-7">
                   Theo dõi trên mạng xã hội.
                 </p>
 
-                <div className=" flex justify-center items-center mt-2">
-                  <button className="w-8 h-8 hover:text-red-600 duration-300 flex justify-center items-center ">
-                    <RiFacebookFill size={20} />
+                <div className="flex justify-center items-center mt-2">
+  <button
+    className="w-8 h-8 hover:text-red-600 duration-300 flex justify-center items-center"
+    onClick={() => window.open('https://www.facebook.com/profile.php?id=100090978858921', '_blank')}
+  >
+    <RiFacebookFill size={20} />
                   </button>
 
                   {/* <button className="w-8 h-8 hover:text-red-600 duration-300 ml-1 flex justify-center items-center ">
