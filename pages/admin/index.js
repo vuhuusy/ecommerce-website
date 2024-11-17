@@ -15,7 +15,7 @@ const Login = () => {
         <title>Admin | Routes</title>
       </Head>
       <main>
-        {/* <div className="w-screen  flex justify-center">
+        <div className="w-screen  flex justify-center">
           <div className="bg-gradient-to-r w-full">
             <div className="flex h-screen text-gray-900">
               <div className="w-11/12 p-8 m-auto bg-white shadow-xl rounded-lg sm:w-96 bg-opacity-80 bg-clip-padding">
@@ -124,7 +124,7 @@ const Login = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </main>
     </>
   );

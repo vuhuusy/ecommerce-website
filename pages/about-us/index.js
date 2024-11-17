@@ -40,8 +40,8 @@ const AboutUs = () => {
       <div className="flex justify-center items-center lg:h-[500px] bg-[url('https://hamart-shop.vercel.app/_next/static/media/about-breadcrumb.5a10c796.jpg')] bg-cover bg-no-repeat  opacity-50">
         <div className="container mx-auto px-3">
           <div className="py-20 text-center text-white">
-            <p className="">Về chúng tôi</p>
-            <h1 className="text-4xl font-bold ">Welcome to Daily Sweets</h1>
+            <p className="">About Us</p>
+            <h1 className="text-4xl font-bold ">CÙNG TÌM HIỂU VỀ DAILY SWEETS NHÉ!</h1>
           </div>
         </div>
       </div>
