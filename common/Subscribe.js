@@ -15,7 +15,7 @@ const Subscribe = () => {
         <div className="bg-white lg:p-5  p-3 m-5 flex items-center flex-col lg:flex-row justify-between">
           <div className="w-full">
             <p className="text-2xl lg:text-4xl font-bold lg:p-6">
-              Subscribe for <br /> Latest Trends & Offers
+              Đăng Ký Để Nhận Được <br /> Ưu Đãi & Khuyến Mãi Dành Riêng Cho Bạn!
             </p>
           </div>
 
@@ -23,10 +23,10 @@ const Subscribe = () => {
             <input
               type="text"
               className="w-full lg:p-4 p-2 my-2  border-2 border-black focus:outline-none"
-              placeholder="Enter Your Email"
+              placeholder="Nhập Email của bạn"
             />
             <button className=" lg:absolute top-4 lg:mt-0   right-3 bg-black text-white px-8 py-2">
-              Subscribe
+              Đăng Ký
             </button>
           </div>
         </div>
