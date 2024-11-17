@@ -34,7 +34,7 @@ const SignUp = () => {
   useEffect(() => {
     if (isSuccess) {
       toast.success(data.message);
-      document.cookie = `harriShop=${data.token}; Path=/;`;
+      document.cookie = `dailySweets=${data.token}; Path=/;`;
       router.push("/");
     }
   }, [isSuccess]);
@@ -43,7 +43,7 @@ const SignUp = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>User | Sign Up</title>
+        <title>User | Đăng ký</title>
       </Head>
       <main>
         <div className="h-screen w-full flex border-b-2 bg-gray-100">
@@ -55,15 +55,15 @@ const SignUp = () => {
                     <div className="space-y-2">
                       <div>
                         <h1 className="text-xl font-medium text-center md:text-2xl font-roboto">
-                          Welcome to HarriShop!
+                          Welcome to Daily Sweets!
                         </h1>
                       </div>
                       <div>
                         <div className="space-x-1 text-sm text-center md:text-base font-nunito">
-                          <span>Already have and Account?</span>
+                          <span>Đã có tài khoản?</span>
                           <Link href="/login">
                             <button className="font-semibold text-blue-500">
-                              Login
+                              Đăng nhập
                             </button>
                           </Link>
                         </div>
@@ -194,10 +194,10 @@ const SignUp = () => {
                           <span className="flex items-center justify-center gap-4">
                             <img
                               className="w-5 h-5 text-xs"
-                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png"
+                              src="gg-logo.png"
                               alt="google_logo"
                             />
-                            <span>Continue with Google</span>
+                            <span>Đăng nhập với Google</span>
                           </span>
                         </button>
                       </div>
@@ -207,7 +207,7 @@ const SignUp = () => {
               </div>
 
               <h2 className="max-w-xs text-center  font-bold mx-auto text-gray-400 mt-8">
-                Started for free and get attractive offer
+                Something Sweet Just For You!
               </h2>
             </div>
           </div>

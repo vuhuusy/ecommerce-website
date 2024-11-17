@@ -34,7 +34,7 @@ const CustomerLogin = () => {
 
   useEffect(() => {
     if (isSuccess) {
-      document.cookie = `harriShop=${data.token}; Path=/;`;
+      document.cookie = `dailySweets=${data.token}; Path=/;`;
       toast.success(data.message);
       router.push("/");
     }
@@ -44,7 +44,7 @@ const CustomerLogin = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>User | Login</title>
+        <title>User | Đăng nhập</title>
       </Head>
       <main>
         <div className="h-screen w-full flex border-b-2 bg-gray-100">
@@ -61,10 +61,10 @@ const CustomerLogin = () => {
                       </div>
                       <div>
                         <div className="space-x-1 text-sm text-center md:text-base font-nunito">
-                          <span>New to HarriShop?</span>
+                          <span>Mới ghé qua Daily Sweets lần đầu?</span>
                           <Link href="/signup">
                             <button className="font-semibold text-blue-500">
-                              SignUp
+                              Đăng ký ngay
                             </button>
                           </Link>
                         </div>
@@ -164,10 +164,10 @@ const CustomerLogin = () => {
                               <span className="flex items-center justify-center gap-4">
                                 <img
                                   className="w-5 h-5 text-xs"
-                                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png"
+                                  src="gg-logo.png"
                                   alt="google_logo"
                                 />
-                                <span>Continue with Google</span>
+                                <span>Đăng nhập với Google</span>
                               </span>
                             </button>
                           )}
@@ -179,7 +179,7 @@ const CustomerLogin = () => {
               </div>
 
               <h2 className="max-w-xs text-center  font-bold mx-auto text-gray-400 mt-8">
-                Started for free and get attractive offer
+                Something Sweet Just For You!
               </h2>
             </div>
           </div>

@@ -51,7 +51,7 @@ const Shop = () => {
   return (
     <>
       <Head>
-        <title>HarriShop | All Product</title>
+        <title>Daily Sweets | Sản phẩm</title>
       </Head>
       <main>
         {productLoading ? (

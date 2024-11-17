@@ -16,7 +16,7 @@ const ContactUsPage = () => {
           <div className="py-20 text-white text-center">
             <p>GET TO KNOW US</p>
             <h1 className="text-3xl lg:text-6xl font-bold">
-              Have a project in mind? <br /> Let’s talk.
+              Phân vân có nên đặt hàng? <br /> Let’s talk.
             </h1>
           </div>
         </div>

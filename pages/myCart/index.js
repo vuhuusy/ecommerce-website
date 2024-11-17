@@ -26,8 +26,8 @@ const MyCart = () => {
 
   const handelRemoveCartList = (product) => {
     swal({
-      title: "Are you sure?",
-      text: "Remove this product on Cart list?",
+      title: "Bạn chắc chưa?",
+      text: "Xóa sản phẩm khỏi Giỏ hàng?",
       icon: "warning",
       buttons: true,
       dangerMode: true,
@@ -35,21 +35,21 @@ const MyCart = () => {
       if (willDelete) {
         addToCartList(product);
       } else {
-        swal("Your Cart List Product is safe!");
+        swal("Danh sách sản phẩm trong Giỏ hàng đã được lưu!");
       }
     });
   };
 
   useEffect(() => {
     if (deleteLoading) {
-      swal("Please Wait...", {
+      swal("Chờ một chút...", {
         icon: "info",
         buttons: false,
       });
     }
 
     if (deleteSuccess) {
-      swal("Cart List Product Remove Successfully!", {
+      swal("Xóa sản phẩm khỏi Giỏ hàng thành công!", {
         icon: "success",
       });
     }
@@ -66,7 +66,7 @@ const MyCart = () => {
   return (
     <>
       <Head>
-        <title>User | Cart</title>
+        <title>User | Giỏ hàng</title>
       </Head>
       <main>
         <section className="mt-12 lg:mt-0">
@@ -79,14 +79,14 @@ const MyCart = () => {
             }}
           >
             <p className="p-12 text-2xl lg:text-4xl text-center font-bold ">
-              My Cart
+              Giỏ hàng của tôi
             </p>
           </div>
 
           <CommonLayout>
             <div className="bg-[#F0F2EE] mt-10">
               <Link href={"/shop"}>
-                <p className="p-5">Continue Shopping</p>
+                <p className="p-5">Tiếp tục mua sắm</p>
               </Link>
             </div>
 
@@ -236,7 +236,7 @@ const MyCart = () => {
                     </table>
                   ) : (
                     <div className="text-2xl font-semibold text-center p-3">
-                      <p>No Wish List Product Found!</p>
+                      <p>Không có sản phẩm nào trong Wish List!</p>
                     </div>
                   )}
                 </div>
@@ -246,11 +246,11 @@ const MyCart = () => {
             {data?.data?.length > 0 && (
               <div className="w-full flex lg:justify-end items-center p-3 lg:p-0">
                 <div className="lg:w-[400px] w-full">
-                  <p className="text-2xl font-semibold ">Cart Totals</p>
+                  <p className="text-2xl font-semibold ">Tổng giá trị Giỏ hàng</p>
 
                   <div className="my-4">
                     <div className="w-full h-full flex justify-between items-center p-4 bg-gray-100 border">
-                      <p>Subtotal</p>
+                      <p>Tổng phụ phí</p>
                       <p>
                         $
                         {data?.data?.reduce(
@@ -264,7 +264,7 @@ const MyCart = () => {
                       </p>
                     </div>
                     <div className="w-full h-full flex justify-between items-center p-4 bg-gray-100 border font-semibold">
-                      <p>Total</p>
+                      <p>Tổng cuối cùng</p>
                       <p>
                         $
                         {data?.data?.reduce(
@@ -281,7 +281,7 @@ const MyCart = () => {
                     <div className="my-4">
                       <Link href={"/checkout"}>
                         <button className=" p-4 w-full bg-red-600 text-white font-semibold">
-                          Proceed to checkout
+                          Tiến hành thanh toán
                         </button>
                       </Link>
                     </div>

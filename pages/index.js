@@ -21,7 +21,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Wellcome to HarriShop</title>
+        <title>Welcome to Daily Sweets</title>
       </Head>
       <main>
         <div>

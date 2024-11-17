@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
           <div>
             <img
-              src="../../pictures/Logo.png"
+              src="Logo.png"
               alt="logo"
             />
 
@@ -57,20 +57,20 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold">Danh mục</h2>
+            <h2 className="text-2xl font-bold">Sản phẩm</h2>
             <div className="mt-4 text-gray-500">
               <ul>
                 <li> Bánh ngọt </li>
                 <li> Sữa hạt </li>
                 {/* <li> Computers & Laptop</li> */}
                 {/* <li> Sport Watches </li> */}
-                <li> Phiếu giảm giá </li>
+                {/* <li> Phiếu giảm giá </li> */}
               </ul>
             </div>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold">Hỗ trợ</h2>
+            <h2 className="text-2xl font-bold">Cần hỗ trợ?</h2>
             <div className="mt-4 text-gray-500">
               <ul>
                 <li> FAQs </li>

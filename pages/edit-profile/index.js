@@ -39,7 +39,7 @@ const EditProfile = () => {
 
   useEffect(() => {
     if (isSuccess) {
-      toast.success("Profile updated successfully");
+      toast.success("Cập nhật hồ sơ thành công");
     }
   }, [isSuccess]);
 
@@ -51,7 +51,7 @@ const EditProfile = () => {
   return (
     <>
       <Head>
-        <title>Profile | Details</title>
+        <title>Hồ sơ | Chi tiết</title>
       </Head>
       <main>
         <section className="p-3 my-16 lg:p-0">
@@ -62,19 +62,19 @@ const EditProfile = () => {
             >
               <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-200">
                 <div className="space-y-2 col-span-full lg:col-span-1">
-                  <p className="font-medium">Personal Information</p>
+                  <p className="font-medium">Thông tin cá nhân</p>
                   <p className="text-xs">
-                    Please provide your personal information in the form below.
-                    This information is necessary to process your order and
-                    ensure accurate delivery. We value your privacy and will
-                    handle your personal data with utmost confidentiality and
-                    security.
+                  Vui lòng cung cấp thông tin cá nhân của bạn theo mẫu dưới đây.
+                    Thông tin này là cần thiết để xử lý đơn đặt hàng của bạn và
+                    đảm bảo đơn hàng được giao hàng tới tận tay bạn. Chúng tôi 
+                    coi trọng sự riêng tư của bạn và sử dụng dữ liệu cá nhân 
+                    của bạn một cách bảo mật tối đa.
                   </p>
                 </div>
                 <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
                   <div className="col-span-full sm:col-span-3">
                     <label htmlFor="firstname" className="text-sm">
-                      First name
+                      Tên
                     </label>
                     <input
                       onChange={(e) =>
@@ -87,7 +87,7 @@ const EditProfile = () => {
                   </div>
                   <div className="col-span-full sm:col-span-3">
                     <label htmlFor="lastname" className="text-sm">
-                      Last name
+                      Họ
                     </label>
                     <input
                       onChange={(e) =>
@@ -100,7 +100,7 @@ const EditProfile = () => {
                   </div>
                   <div className="col-span-full sm:col-span-3">
                     <label htmlFor="email" className="text-sm">
-                      Phone Number
+                      Số điện thoại
                     </label>
                     <input
                       onChange={(e) =>
@@ -116,7 +116,7 @@ const EditProfile = () => {
                   </div>
                   <div className="col-span-full sm:col-span-3">
                     <label htmlFor="email" className="text-sm">
-                      Email
+                      Địa chỉ Email
                     </label>
                     <input
                       defaultValue={user?.email}
@@ -127,7 +127,7 @@ const EditProfile = () => {
                   </div>
                   <div className="col-span-full">
                     <label htmlFor="address" className="text-sm">
-                      Address
+                      Địa chỉ nhận hàng
                     </label>
                     <input
                       onChange={(e) =>
@@ -141,7 +141,7 @@ const EditProfile = () => {
                   </div>
                   <div className="col-span-full sm:col-span-2">
                     <label htmlFor="city" className="text-sm">
-                      City
+                      Tỉnh / Thành phố
                     </label>
                     <input
                       onChange={(e) =>
@@ -155,7 +155,7 @@ const EditProfile = () => {
                   </div>
                   <div className="col-span-full sm:col-span-2">
                     <label htmlFor="state" className="text-sm">
-                      State / Province
+                      Quận / Huyện
                     </label>
                     <input
                       onChange={(e) =>
@@ -167,9 +167,9 @@ const EditProfile = () => {
                       className="w-full rounded-md focus:ring focus:ri focus:ri border-gray-700 text-gray-900 p-2"
                     />
                   </div>
-                  <div className="col-span-full sm:col-span-2">
+                  {/* <div className="col-span-full sm:col-span-2">
                     <label htmlFor="zip" className="text-sm">
-                      ZIP / Postal
+                      Mã bưu điện
                     </label>
                     <input
                       onChange={(e) =>
@@ -180,11 +180,11 @@ const EditProfile = () => {
                       placeholder=""
                       className="w-full rounded-md focus:ring focus:ri focus:ri border-gray-700 text-gray-900 p-2"
                     />
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="space-y-2 col-span-full lg:col-span-1">
-                  <p className="font-medium">Profile Picture</p>
+                  <p className="font-medium">Ảnh hồ sơ</p>
                   <p className="text-xs"></p>
                 </div>
                 <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">

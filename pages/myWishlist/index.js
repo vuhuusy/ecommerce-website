@@ -23,8 +23,8 @@ const MyWishlist = () => {
 
   const handelRemoveWishList = (product) => {
     swal({
-      title: "Are you sure?",
-      text: "Remove this product on Wish list?",
+      title: "Bạn chắc chưa?",
+      text: "Xóa sản phẩm khỏi Wish list?",
       icon: "warning",
       buttons: true,
       dangerMode: true,
@@ -32,21 +32,21 @@ const MyWishlist = () => {
       if (willDelete) {
         addToWishList(product);
       } else {
-        swal("Your Wist List Product is safe!");
+        swal("Sản phẩm trong Wist List đã được lưu!");
       }
     });
   };
 
   useEffect(() => {
     if (deleteLoading) {
-      swal("Please Wait...", {
+      swal("Chờ một chút...", {
         icon: "info",
         buttons: false,
       });
     }
 
     if (deleteSuccess) {
-      swal("Wist List Product Remove Successfully!", {
+      swal("Sản phẩm đã được xóa khỏi Wist List thành công!", {
         icon: "success",
       });
     }
@@ -68,14 +68,14 @@ const MyWishlist = () => {
             }}
           >
             <p className="p-12 text-2xl lg:text-4xl text-center font-bold ">
-              My Wishlist
+              Wishlist của tôi
             </p>
           </div>
 
           <CommonLayout>
             <div className="bg-[#F0F2EE] mt-10">
               <Link href={"/shop"}>
-                <p className="p-5">Continue Shopping</p>
+                <p className="p-5">Tiếp tục mua sắm</p>
               </Link>
             </div>
 
@@ -199,7 +199,7 @@ const MyWishlist = () => {
                     </table>
                   ) : (
                     <div className="text-2xl font-semibold text-center p-3">
-                      <p>No Wish List Product Found!</p>
+                      <p>Không có sản phẩm nào trong Wish List!</p>
                     </div>
                   )}
                 </div>
@@ -209,7 +209,7 @@ const MyWishlist = () => {
             <div className="my-4 p-3 lg:p-0">
               <Link href={"/myCart"}>
                 <button className=" p-4 bg-black text-white font-semibold">
-                  Go to Cart
+                  Đi tới Giỏ hàng
                 </button>
               </Link>
             </div>

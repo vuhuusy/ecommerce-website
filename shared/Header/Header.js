@@ -67,7 +67,7 @@ const Header = () => {
             <div className="flex items-center">
               <Link href={"/"}>
                 <img
-                  src="/home/msi/Desktop/harri-eCommerce-client/pictures/Logo.png"
+                  src="Logo.png"
                   alt="logo"
                 />
               </Link>
@@ -140,7 +140,7 @@ const Header = () => {
                               className="w-full flex items-center p-3 duration-300 hover:bg-gray-200 "
                             >
                               <RxDashboard className="mr-2" />
-                              <span className="">Dashbord</span>
+                              <span className="">Dashboard</span>
                             </Link>
                           ) : (
                             <Link
@@ -148,7 +148,7 @@ const Header = () => {
                               className="w-full flex items-center p-3 duration-300 hover:bg-gray-200 "
                             >
                               <RxDashboard className="mr-2" />
-                              <span className="">My Orders</span>
+                              <span className="">Đơn đặt hàng</span>
                             </Link>
                           )}
 
@@ -157,7 +157,7 @@ const Header = () => {
                             className="w-full flex font-sm p-3 duration-300 hover:bg-gray-200 items-center"
                           >
                             <AiFillSetting className="mr-2" />
-                            <span className="">Edit Profile</span>
+                            <span className="">Chỉnh sửa</span>
                           </Link>
 
                           <button
@@ -165,7 +165,7 @@ const Header = () => {
                             className="w-full rounded-lg rounded-t-none flex font-sm p-3 duration-300 hover:bg-gray-200 items-center"
                           >
                             <AiOutlineLogout className="mr-2" />
-                            <span className="">Log Out</span>
+                            <span className="">Đăng xuất</span>
                           </button>
                         </>
                       ) : (
@@ -175,7 +175,7 @@ const Header = () => {
                             className="w-full rounded-lg rounded-t-none flex font-sm p-3 duration-300 hover:bg-gray-200 items-center"
                           >
                             <AiOutlineLogout className="mr-2" />
-                            <span className="">Log in</span>
+                            <span className="">Đăng nhập</span>
                           </button>
                         </Link>
                       )}
@@ -223,7 +223,7 @@ const Header = () => {
           <div className="">
             <div className="flex h-[7vh] px-3 bg-[#F0F2EE] items-center justify-between">
               <img
-                src="/home/msi/Desktop/harri-eCommerce-client/pictures/Logo.png"
+                src="Logo.png"
                 alt="logo"
               />
               {open ? (
@@ -306,7 +306,7 @@ const Header = () => {
                                     className="w-full flex items-center p-3 duration-300 hover:bg-gray-200 "
                                   >
                                     <RxDashboard className="mr-2" />
-                                    <span className="">Dashbord</span>
+                                    <span className="">Dashboard</span>
                                   </Link>
                                 ) : (
                                   <Link
@@ -314,7 +314,7 @@ const Header = () => {
                                     className="w-full flex items-center p-3 duration-300 hover:bg-gray-200 "
                                   >
                                     <RxDashboard className="mr-2" />
-                                    <span className="">My Orders</span>
+                                    <span className="">Đơn đặt hàng</span>
                                   </Link>
                                 )}
 
@@ -323,7 +323,7 @@ const Header = () => {
                                   className="w-full flex font-sm p-3 duration-300 hover:bg-gray-200 items-center"
                                 >
                                   <AiFillSetting className="mr-2" />
-                                  <span className="">Edit Profile</span>
+                                  <span className="">Chỉnh sửa</span>
                                 </Link>
 
                                 <button
@@ -331,7 +331,7 @@ const Header = () => {
                                   className="w-full rounded-lg rounded-t-none flex font-sm p-3 duration-300 hover:bg-gray-200 items-center"
                                 >
                                   <AiOutlineLogout className="mr-2" />
-                                  <span className="">Log Out</span>
+                                  <span className="">Đăng xuất</span>
                                 </button>
                               </>
                             ) : (
@@ -341,7 +341,7 @@ const Header = () => {
                                   className="w-full rounded-lg rounded-t-none flex font-sm p-3 duration-300 hover:bg-gray-200 items-center"
                                 >
                                   <AiOutlineLogout className="mr-2" />
-                                  <span className="">Log in</span>
+                                  <span className="">Đăng nhập</span>
                                 </button>
                               </Link>
                             )}
@@ -384,11 +384,11 @@ const Header = () => {
                 </div>
 
                 <div className="border-b mt-28 py-8 px-2">
-                  <p className="font-semibold">Follow :</p>
+                  <p className="font-semibold">Theo dõi :</p>
 
                   <div className=" flex items-center mt-2">
                     <div className="w-8 h-8 flex justify-center items-center border">
-                      <a href="https://www.facebook.com/shohagroy.7771/">
+                      <a href="https://www.facebook.com/profile.php?id=100090978858921">
                         <RiFacebookFill size={20} />
                       </a>
                     </div>
