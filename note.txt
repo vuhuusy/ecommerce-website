@@ -1,2 +1,2 @@
 docker build -t dailysweets .
-docker run -p 3000:3000 dailysweets -d
+docker run -p 3000:3000 -d dailysweets

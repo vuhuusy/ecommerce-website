@@ -2,9 +2,9 @@ import CommonLayout from "@/layouts/commonLayout";
 import React from "react";
 import { RiFacebookFill } from "react-icons/ri";
 import {
-  AiOutlineTwitter,
-  AiFillLinkedin,
-  AiFillYoutube,
+  // AiOutlineTwitter,
+  // AiFillLinkedin,
+  // AiFillYoutube,
 } from "react-icons/ai";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
           <div>
             <img
-              src="/home/msi/Desktop/harri-eCommerce-client/pictures/Logo.png"
+              src="../../pictures/Logo.png"
               alt="logo"
             />
 
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold">Cửa hàng</h2>
+            <h2 className="text-2xl font-bold">Danh mục</h2>
             <div className="mt-4 text-gray-500">
               <ul>
                 <li> Bánh ngọt </li>
@@ -82,11 +82,19 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-2xl font-bold">Nói chuyện với chúng tôi</h2>
+          <h2 className="text-2xl font-bold">Talk to us</h2>
             <div className="mt-4 text-gray-500">
               <p>
-                Địa chỉ ở gần bạn. <br /> See{"https://maps.app.goo.gl/MJMT33FP6v9xWg7Z8"}
-                <span className="text-red-600">Our Stores</span>
+                Địa chỉ ở gần bạn: <br /> 
+                Xem{" "}
+                <a
+                  href="https://maps.app.goo.gl/MJMT33FP6v9xWg7Z8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600"
+                >
+                  đường đi
+                </a>
               </p>
 
               <p className="text-2xl font-bold text-black py-3">
@@ -102,7 +110,7 @@ const Footer = () => {
           <div className="border-t py-4">
             <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center ">
               <p className="text-sm lg:text-md py-2">
-                Copyright © 2023 by{" "}
+                Copyright © 2024 by{" "}
                 <span className="text-red-600"> syvh </span> rights
                 reserved.
               </p>
